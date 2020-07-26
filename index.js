@@ -147,7 +147,7 @@ function autoResponder(message) {
     if (!message.member.hasPermission("CHANGE_NICKNAME")) {
         /* bad messages regexes */
         const discordInviteRegex = new RegExp("(d.{0,3}.{0,3}s.{0,3}c.{0,3}.{0,3}r.{0,3}d).{0,7}(gg|com.{0,3}invite)");
-        const hacksRegex = new RegExp("(?<![a-z])(s+h+[a@4]+r+k+h)([@a4]+[ckx]+)|(c+h+[e3]+[a@4]+t|h+[@a4]+[ckx]+)([eo30]+|d+|r+|s+|i+n+g*?)*(?![a-z])");
+        const hacksRegex = new RegExp("(?<![a-z]).*([@a4]+[ckx]+|c+h+[e3]+[a@4]+t|h+[@a4]+[ckx]+)([eo30]+|d+|r+|s+|i+n+g*?)*(?![a-z])");
         const slursRegex = new RegExp("(nigg(?!a).{1,2}|tran(?![spfqcg]).{1,2}|fag.{1,2}t)");
 
         /* help regexes */
